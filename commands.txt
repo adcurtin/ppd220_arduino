@@ -1,0 +1,69 @@
+//clear memory
+]!Z00]"E$]$
+
+########################
+
+]!Z00]"
+
+E$ //do I need text file A ?
+!AU000AFF00 //text file !
+BVU000A0000 //string file V (value)
+BDU00140000 //string file D (date)
+!DL07054000 //dots file !
+
+]"
+
+E2!A1 //set text file ! to always display
+
+]$
+
+########################
+
+]!Z00]"
+
+//send special character !
+I!0705
+01010]-
+11110]-
+10001]-
+11110]-
+10001]-
+11110]-
+01010]-
+]$
+
+
+########################
+
+
+]!Z00]"
+A! //write text file !
+];0b //mode fill display hold
+]4! //display ! dots files
+1 = $10000"
+]0V" //display string file V
+]-// CR
+Dec 9 12:05 AM"
+]0D" //display string file D
+]$
+
+#########
+
+]!Z00]"
+GV11000
+]"GDDec 9 3:05 AM
+]$
+
+
+########################
+
+]!Z00]"
+E'S //set time 12hour
+]"
+
+E 1626 //set time of day 16:26
+]"
+E&7 //set day of week Sat (7)
+]"
+E;120917 //set date mm/dd/yy
+]$
